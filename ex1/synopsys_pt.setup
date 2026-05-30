@@ -1,0 +1,10 @@
+set search_path [list . ./tech/STcmos65]
+
+set libraries [list \
+    CORE65LPLVT_nom_1.20V_25C.db \
+]
+
+set link_library [list *]
+foreach library $libraries {
+    lappend link_library $library
+}
